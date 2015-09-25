@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		
+		<record model="ir.ui.view" id="view_attachment_form">
+            <field name="name">ir.attachment.form</field>
+            <field name="model">ir.attachment</field>
+            <field name="inherit_id" ref="base.view_attachment_form"/>
+            <field name="arch" type="xml">
+                <field name="datas" position="after">
+                    <field name="available_in_editor"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>

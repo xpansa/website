@@ -1,0 +1,57 @@
+<templates>
+    <t t-extend="website.editor.dialog.media">
+    	<t t-jquery=".nav.nav-tabs" t-operation="append">
+            <li><a href="#editor-media-file" data-toggle="tab">File</a></li>
+    	</t>
+    	<t t-jquery=".tab-content" t-operation="append">
+	        <div class="tab-pane fade" id="editor-media-file"></div>
+    	</t>
+    </t>
+
+    <t t-name="website.editor.dialog.file">
+        <div>
+            <form method="POST"
+                  action="/website/attach_file"
+                  enctype="multipart/form-data"
+                  target="fileframe"
+                  class="form-inline">
+                <div class="well">
+                    <div class="form-group">
+                        <input type="file" name="upload" style="position: absolute; opacity: 0; width: 1px; height: 1px;"/>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary filepicker">Upload file from your computer</button>
+                        </div>
+                        <button type="button" class="btn hidden wait" disabled="disabled">Uploading...</button>
+                    </div>
+                </div>
+                <input type="hidden" name="func"/>
+                <div class="file-existing-attachments"/>
+            </form>
+            <div class="well clearfix mt32">
+                <div class="form-group mb0 btn-group">
+                    <label for="title" style="width: 220px; line-height: 2em;" class="pull-left">Set a link title</label>
+                    <input type="text" name="title" class="form-control pull-left" style="width: 400px;" id="title"/>
+                </div>
+            </div>
+            <div class="well clearfix mt32">
+                <div class="form-group mb0 btn-group">
+                    <label style="width: 220px; line-height: 2em;" class="pull-left">Or copy URL</label>
+                    <span class="file-url"/>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website.editor.dialog.file.existing.content">
+        <div class="file-existing-attachments">
+            <div class="row mt16" t-foreach="rows" t-as="row">
+                <div class="col-sm-2 file-existing-attachment-cell"
+                     t-foreach="row" t-as="attachment">
+                    <i class="fa fa-times file-existing-attachment-remove" t-att-data-id="attachment.id"/>
+                    <span style="max-width: 100%;overflow: hidden;display: block;cursor:pointer;" t-att-data-id="attachment.id" class="label label-primary"><t t-esc="attachment.name"/></span>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

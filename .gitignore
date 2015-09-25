@@ -57,3 +57,4 @@ docs/_build/
 
 # Debug maps
 *.css.map
+.DS_Store
