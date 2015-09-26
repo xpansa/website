@@ -24,6 +24,7 @@
     'description': """
 Link Attachment in Website
 =====================================
+Includes a "File" tab in media dialog for linking a file
 """,
     'summary': 'Includes a "File" tab in media dialog for linking a file',
     'depends': [
