@@ -4,8 +4,11 @@
 Link Attachment in Website
 ======================
 
-Includes a "File" tab in media dialog for linking a file
-
+This module extends website's media dialog by adding a new tab - 'File'. 
+In the 'File' tab its allows to upload files from computer to odoo,
+and include a link into the website or copy the link and share it elsewhere.
+All files are stored as an Odoo attachments and can be selected multiple times.
+All files uploaded via this module is publicly available, no restrictions are set.
 
 Contributors
 ------------
