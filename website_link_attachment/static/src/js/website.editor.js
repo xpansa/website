@@ -54,6 +54,12 @@ $(document).ready(function() {
             $(this.media.$).text(this.att_name);
             this._super();
         },
+        show_error: function(message){
+            this.$('form').parent().html($('<p/>',{
+                'class': 'mt16 mb16 alert alert-danger',
+                'text': message
+            }));
+        },
         search: function(needle) {
             var self = this;
             this.fetch_existing(needle);
@@ -87,6 +93,7 @@ $(document).ready(function() {
             this.fetch_existing();
         },
         fetch_existing: function(needle) {
+            var self = this;
             var domain = [
                 ['available_in_editor', '=', true]
             ];
@@ -103,7 +110,9 @@ $(document).ready(function() {
                     order: 'id desc',
                     context: website.get_context(),
                 }
-            }).then(this.proxy('fetched_existing'));
+            }).then(this.proxy('fetched_existing')).fail(function(e, error){
+                self.show_error(error.message);
+            });
         },
         fetched_existing: function(records) {
             this.records = records;
@@ -160,7 +169,9 @@ $(document).ready(function() {
                     self.display_attachments();
                     return;
                 }
-            });
+            }).fail(function(e, error){
+                self.show_error(error.message);
+            });;
         },
         select_existing: function(e) {
             var att_id = $(e.currentTarget).attr('data-id');

@@ -42,7 +42,6 @@ class WebsiteLinkAttachment(http.Controller):
             })
 
         except Exception, e:
-            logger.exception("Failed to upload doc to attachment")
             message = unicode(e)
 
         return """<script type='text/javascript'>
