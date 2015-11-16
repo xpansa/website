@@ -22,7 +22,7 @@ addon | version | summary
 [website_blog_facebook_comment](website_blog_facebook_comment/) | 8.0.1.0.0 | Add Facebook comments on blog posts
 [website_blog_mgmt](website_blog_mgmt/) | 8.0.1.0.0 | Website blog Management
 [website_container_fluid](website_container_fluid/) | 8.0.1.0.1 | Let you choose between fixed or fluid containers
-[website_cookie_notice](website_cookie_notice/) | 8.0.1.0.0 | Show cookie notice according to cookie law
+[website_cookie_notice](website_cookie_notice/) | 8.0.2.0.0 | Show cookie notice according to cookie law
 [website_crm_privacy_policy](website_crm_privacy_policy/) | 8.0.1.0.0 | Website CRM privacy policy
 [website_event_register_free](website_event_register_free/) | 8.0.1.0.0 | Avoid shopping chart when registering for free events
 [website_event_register_free_with_sale](website_event_register_free_with_sale/) | 8.0.1.0.0 | Combine free and paid tickets on events
@@ -37,5 +37,7 @@ addon | version | summary
 [website_sale_order_company](website_sale_order_company/) | 8.0.1.0.0 | Set order company according to products company
 [website_sale_unsaleable_options](website_sale_unsaleable_options/) | 8.0.1.0.0 | Prevent optional products to be sold singularly
 [website_sale_vat_required](website_sale_vat_required/) | 8.0.1.0.0 | VAT number required in checkout form
+[website_signup_legal_page_required](website_signup_legal_page_required/) | 8.0.1.0.0 | Force the user to accept the legal terms to open an account
+[website_slides](website_slides/) | 8.0.1.0.0 | Share and Publish Videos, Presentations and Documents
 
 [//]: # (end addons)
