@@ -24,6 +24,7 @@ addon | version | summary
 [website_container_fluid](website_container_fluid/) | 8.0.1.0.1 | Let you choose between fixed or fluid containers
 [website_cookie_notice](website_cookie_notice/) | 8.0.2.0.0 | Show cookie notice according to cookie law
 [website_crm_privacy_policy](website_crm_privacy_policy/) | 8.0.1.0.0 | Website CRM privacy policy
+[website_crm_quick_answer](website_crm_quick_answer/) | 8.0.1.0.0 | Add an automatic answer for contacts asking for info
 [website_event_register_free](website_event_register_free/) | 8.0.1.0.0 | Avoid shopping chart when registering for free events
 [website_event_register_free_with_sale](website_event_register_free_with_sale/) | 8.0.1.0.0 | Combine free and paid tickets on events
 [website_hr_department](website_hr_department/) | 8.0.0.1.0 | Display the structure of your departments and their members.
@@ -39,5 +40,6 @@ addon | version | summary
 [website_sale_vat_required](website_sale_vat_required/) | 8.0.1.0.0 | VAT number required in checkout form
 [website_signup_legal_page_required](website_signup_legal_page_required/) | 8.0.1.0.0 | Force the user to accept the legal terms to open an account
 [website_slides](website_slides/) | 8.0.1.0.0 | Share and Publish Videos, Presentations and Documents
+[website_snippet_contact_form](website_snippet_contact_form/) | 8.0.1.0.0 | Put a contact form anywhere you want
 
 [//]: # (end addons)
