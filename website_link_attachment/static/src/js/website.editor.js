@@ -138,9 +138,6 @@ $(document).ready(function() {
                     'website.editor.dialog.file.existing.content', {
                         rows: rows
                     }));
-            this.parent.$('.pager')
-                .find('li.previous').toggleClass('disabled', (from === 0)).end()
-                .find('li.next').toggleClass('disabled', (from + per_screen >= records.length));
         },
         try_remove: function(e) {
             var self = this;
